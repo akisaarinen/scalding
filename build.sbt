@@ -2,7 +2,7 @@ import AssemblyKeys._
 
 name := "scalding"
 
-version := "0.3.2"
+version := "0.3.2-20120223-2.9.1"
 
 organization := "com.twitter"
 

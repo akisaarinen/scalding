@@ -32,3 +32,8 @@ seq(assemblySettings: _*)
 excludedJars in assembly <<= (fullClasspath in assembly) map { cp =>
   cp filter {_.data.getName == "janino-2.5.16.jar"}
 }
+
+publishTo := Some(Resolver.file("GitHub Pages", file("../scalding-gh-pages/maven/")))
+
+publishArtifact in (Compile, packageDoc) := false
+
